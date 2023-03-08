@@ -1,0 +1,32 @@
+.taskCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  margin: 20px 20px;
+  margin-top: 0;
+  padding: 30px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+.taskCheckbox {
+  margin-right: 30px;
+}
+
+.checkbox-round {
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  border-radius: 20%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: #C2E9D8;
+}

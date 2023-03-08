@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+import './Task.css'
 
-export const Task = ({ task }) => {
-  const [doneStatus, setDoneStatus] = useState(true);
-
+export const Task = ({ task, onCheckboxClick }) => {
   const handleClick = () => {
-    setDoneStatus(!doneStatus);
-    task.isDone = doneStatus;
+    onCheckboxClick();
+    task.isDone = !task.isDone;
   }
 
   return (
