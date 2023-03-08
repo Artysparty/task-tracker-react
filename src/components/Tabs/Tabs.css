@@ -1,0 +1,37 @@
+.tabsContainer {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dayButton {
+  border: none;
+  background-color: #6B8F71;
+  color: white;
+  min-width: 150px;
+  min-height: 50px;
+  font-size: 21px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.dayButton:disabled {
+  background-color: #AAD2BA;
+}
+
+.dayButton:hover {
+  background-color: #C2E9D8;
+  transition: 400ms;
+}
+
+.dayButton:first-child {
+  border-radius: 5px 0 0 5px ;
+}
+
+.dayButton:last-child {
+  border-radius: 0 5px 5px 0 ;
+}
