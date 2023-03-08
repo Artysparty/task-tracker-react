@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const Task = ({ task }) => {
+  const [doneStatus, setDoneStatus] = useState(true);
+
+  const handleClick = () => {
+    setDoneStatus(!doneStatus);
+    task.isDone = doneStatus;
+  }
+
   return (
     <div>
       <div className="taskCard" key={task.id}>
         <span className="taskCheckbox">
-          {/* TODO: Сделать checked onChange, иначе чекбокс будет readonly*/}
           <input
             className="checkbox-round"
             type="checkbox"
             checked={task.isDone}
+            onChange={handleClick}
           />
         </span>
         <div>
